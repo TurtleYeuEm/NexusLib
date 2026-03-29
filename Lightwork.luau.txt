@@ -4687,7 +4687,7 @@ function Library:Window(p)
 		end)
 
 		do
-			local CloseUI = p.CloseUIButton
+			local CloseUI = p.CloseUIButton or {Enabled = false, Text = "Hide"}
 			local CloseUIShadow = Instance.new("ImageLabel")
 			local UIPaddingCloseUI_1 = Instance.new("UIPadding")
 			local BackgroundCloseUI_1 = Instance.new("Frame")
